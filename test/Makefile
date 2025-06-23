@@ -6,7 +6,7 @@ LFLAGS += -Werror -Wall -pthread -lm
 
 DEPS = *.h
 OBJ = eeyore/src/Eeyore.o eeyore/src/Events.o eeyore/src/Logger.o eeyore/src/Semaphores.o eeyore/src/Threads.o eeyore/src/Alloc.o \
-	SpinupTests.o ../core/src/sky.o
+	SpinupTests.o ReverseTest.o ../core/src/sky.o ../core/src/reverse.o
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)

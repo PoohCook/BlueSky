@@ -17,6 +17,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include "SpinupTests.h"
+#include "ReverseTest.h"
 
 int main(void){
 
@@ -24,6 +25,8 @@ int main(void){
     sleep(1);
 
     test_sky();
+
+    test_reverse();
 
     sleep(1);
 
